@@ -1,0 +1,457 @@
+@media (max-width: 1250px) {
+    .home-page__text {
+        font-size: calc(70px + (30 + 30 * 0.7) * (100vw - 320px) / 1520);
+    }
+
+    .letter-W,
+    .letter-E,
+    .letter-B {
+        font-size: calc(90px + (30 + 30 * 0.7) * (100vw - 320px) / 1520);
+    }
+}
+
+@media (max-width: 1190px) {
+    .project__list__container,
+    .projects__card__block {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .project__card {
+        width: 280px;
+        height: 380px;
+    }
+
+    .project__image__background {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .viewing__sign {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1251px) {
+    .aboutMe__text__block span {
+        color: var(--main-white-color);
+    }
+}
+
+@media (max-width: 1250px) {
+    .header__container {
+        width: 90%;
+        transition: 0.5s;
+    }
+
+    .intro__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .aboutMe__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .aboutMe__text__block span {
+        font-size: calc(23px + 27 * (100vw / 1520));
+        transition: 0.5s;
+    }
+
+    .section__title {
+        font-size: calc(30px + 20 * (100vw / 1520));
+    }
+
+    .skills__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .projects__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .footer__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 1220px) {
+    .skills__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__block {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .physical__icons__block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1190px) {
+    .skills__block {
+        justify-content: space-between;
+    }
+
+    .html__block,
+    .css__block,
+    .js__block,
+    .vue__block {
+        width: 49%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .projects__card__block {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .header__container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .change__theme__btn {
+        margin-right: 50px;
+    }
+
+    .header__burger__container {
+        display: flex;
+    }
+
+    .header__menu {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+
+        box-sizing: border-box;
+        padding: 10px 10px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 100%;
+        height: 85dvh;
+        transition: 0.3s;
+
+        z-index: 10;
+
+        opacity: 0;
+        transform-style: preserve-3d;
+        transform: translate3d(110px, -250px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg)
+            rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    .burger__menu__divider-1,
+    .burger__menu__title,
+    .burger__menu__divider-2,
+    .burger__menu__social__block__title,
+    .burger__menu__social__block {
+        display: flex;
+    }
+
+    .home__btn,
+    .about__btn,
+    .projects__btn {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutMe__text__block span {
+        font-size: calc(23px + (27 + 27 * 0.7) * ((100vw - 320px) / 1520));
+    }
+
+    .section__title {
+        font-size: calc(30px + (20 + 20 * 0.7) * ((100vw - 320px) / 1520));
+    }
+}
+
+@media (max-width: 560px) {
+    .skills__block {
+        justify-content: space-between;
+    }
+
+    .html__block,
+    .css__block,
+    .js__block,
+    .vue__block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .body__text,
+    .closing__parenthesis {
+        margin-left: 15px;
+    }
+
+    .comment__text,
+    .font__famaly__text {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .aboutMe__text__block {
+        padding: 15px;
+    }
+
+    .author__info,
+    .update__info,
+    .telegram__link,
+    .linkedIn__link,
+    .gitHub__link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .greet__container {
+        width: 100%;
+        transition: 0.5s;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .name__page__block {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .description__page__block {
+        font-size: calc(22px + (14 + 14 * 0.7) * ((100vw - 320px) / 1520));
+    }
+
+    .project__list__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 1040px) {
+    .project__list__container {
+        width: 100%;
+        transition: 0.5s;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1250px) {
+    .version__history__container {
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 700px) {
+    .version__history__title,
+    .project-name__page {
+        font-size: 30px;
+    }
+
+    .version__number {
+        font-size: 20px;
+    }
+
+    .update__date,
+    .update__description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    .version__history__title,
+    .project-name__page {
+        font-size: 25px;
+    }
+
+    .version__number {
+        font-size: 18px;
+    }
+
+    .update__date,
+    .update__description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1215px) {
+    .aboutMe__page__container {
+        width: 100%;
+
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .aboutMe__content__row-2 {
+        width: 591px;
+    }
+
+    .block__interests {
+        width: 100%;
+        height: auto;
+    }
+
+    .interests__content {
+        justify-content: space-between;
+    }
+
+    .experience-future-container {
+        width: 383px;
+    }
+
+    .block__experience,
+    .block__future-content {
+        width: 100%;
+    }
+
+    .block__quotes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .aboutMe__content__row-1,
+    .aboutMe__content__row-2 {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .block__aboutMe {
+        width: 383px;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .main-image-container {
+        width: 95%;
+    }
+
+    .aboutMe-text-content {
+        width: 100%;
+    }
+
+    .aboutMe-paragraph-1,
+    .aboutMe-paragraph-2 {
+        font-size: 18px;
+    }
+
+    .music-social-container {
+        width: 383px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block__music {
+        width: 383px;
+    }
+
+    .block__socials {
+        width: 383px;
+        height: auto;
+
+        flex-direction: row;
+    }
+
+    .social-icon-block {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-version-link {
+        margin-top: 0px;
+        gap: 10px;
+    }
+
+    .block__education {
+        width: 383px;
+    }
+
+    .divider-education {
+        width: 100%;
+    }
+
+    .block__tools {
+        width: 383px;
+    }
+
+    .tool__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .block__interests {
+        width: 383px;
+    }
+
+    .interests__content {
+        justify-content: center;
+    }
+
+    .skills-experience-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .block__skills {
+        width: 383px;
+        height: auto;
+    }
+
+    .block__quotes {
+        width: 383px;
+    }
+}
+
+@media (max-width: 430px) {
+    .block__aboutMe,
+    .music-social-container,
+    .block__music,
+    .block__socials,
+    .block__education,
+    .block__tools,
+    .block__interests,
+    .block__skills,
+    .block__quotes,
+    .skills-experience-container,
+    .experience-future-container,
+    .main-image-container,
+    .music__control__panel {
+        width: 100%;
+    }
+}

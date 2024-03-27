@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Rodion Gimranov - Frontend Developer</title>
+        <link rel="icon" href="Media/images/main-favicon.png" />
+        <link rel="apple-touch-icon" href="Media/images/main-favicon.png" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/adaptive-styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="Rodion Gimranov - Frontend Developer" />
+        <meta
+            name="description"
+            content="This website is the web portfolio of Rodion Gimranov, an emerging frontend developer. Showcasing a professional journey through innovative design and cutting-edge technology, it represents a steadfast commitment to modern web development practices and user-centric solutions."
+        />
+        <meta property="og:image" content="Media/images/main-image.webp" />
+    </head>
+
+    <body id="home__page">
+        <header class="header__container" id="header-menu-open">
+            <div class="header__burger__container" id="header-burgerBTN">
+                <img
+                    class="header__burger__btn"
+                    src="Media/svg/header-burger-btn.svg"
+                    loading="lazy"
+                    alt="Burger Menu Botton"
+                />
+            </div>
+            <div class="header__menu-empty-element"></div>
+            <nav class="header__menu" id="header-nav-menu">
+                <p class="burger__menu__title">Navigation</p>
+                <div class="burger__menu__divider-1"></div>
+                <a href="#home__page" class="home__btn nav-item" id="header-home-btn">Home</a>
+                <a href="about-me-page.html" class="about__btn nav-item" id="header-about-btn"
+                    >About</a
+                >
+                <a href="projects-page.html" class="projects__btn nav-item" id="header-projects-btn"
+                    >Projects</a
+                >
+                <div class="burger__menu__divider-2"></div>
+                <p class="burger__menu__social__block__title">Socials</p>
+                <div class="burger__menu__social__block">
+                    <a href="https://t.me/RodionGimranov" class="telegram__header__link external"
+                        >Telegram</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/rodiongimranov/"
+                        class="linkedIn__header__link external"
+                        >LinkedIn</a
+                    >
+                    <a
+                        href="https://github.com/RodionGimranov"
+                        class="gitHub__header__link external"
+                        >GitHub</a
+                    >
+                </div>
+            </nav>
+        </header>
+        <main class="intro__container">
+            <div class="home-page__text" id="text_enlargement_animation">
+                I enjoy creating<br /><span class="letter-W">w</span><span class="letter-E">e</span
+                ><span class="letter-B">b</span> <span class="typing__text"></span>
+            </div>
+        </main>
+        <section class="aboutMe__container" id="about-me-container">
+            <div class="aboutMe__text__block animatable">
+                <h2 class="aboutMe__text">
+                    <span>
+                        I am a budding Frontend developer, currently studying in my third year at
+                        the KFU. I specialize in developing web solutions, paying close attention to
+                        design details and applying modern approaches in web technologies. I believe
+                        that frontend is about more than just changing the color of buttons.
+                    </span>
+                </h2>
+            </div>
+            <div class="change__color__btn-wrapper">
+                <div class="change__color__btn" id="change-color-btn">Click me</div>
+            </div>
+        </section>
+        <section class="skills__container" id="skills__page">
+            <h3 class="section__title">Skills</h3>
+            <div class="skills__content">
+                <div class="skills__block">
+                    <div class="html__block animatable">
+                        <p class="html__name__skills">HTML</p>
+                        <p class="skill__description">
+                            Semantic, cross-browser, responsive, and pixel perfect layout.
+                        </p>
+                    </div>
+                    <div class="css__block animatable">
+                        <p class="css__name__skills">CSS</p>
+                        <p class="skill__description">Flexbox, grid, animations, media queries.</p>
+                    </div>
+                    <div class="js__block animatable">
+                        <p class="js__name__skills">JavaScript</p>
+                        <p class="skill__description">
+                            Fundamentals, algorithms and data structures, DOM, events.
+                        </p>
+                    </div>
+                    <div class="vue__block animatable">
+                        <p class="vue__name__skills">Vue.js</p>
+                        <p class="skill__description">CLI, Router</p>
+                    </div>
+                </div>
+                <div class="physical__icons__block animatable"></div>
+            </div>
+        </section>
+        <section class="projects__container" id="projects__page">
+            <h3 class="section__title">Projects</h3>
+            <div class="projects__card__block">
+                <div class="project__card animatable">
+                    <a
+                        href="https://rodiongimranov.github.io/Personal-WebSite/"
+                        class="project__image__background"
+                        target="_blank"
+                    >
+                        <video
+                            class="webClock__background"
+                            src="Media/videos/Portfolio-Website-2-Screen-Recording.mp4"
+                            type="video/mp4"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                        <p class="project__status"></p>
+                        <div class="viewing__sign__container">
+                            <img
+                                class="viewing__sign"
+                                src="Media/svg/viewing__sign-icon.svg"
+                                alt="Viewing Sign"
+                            />
+                        </div>
+                    </a>
+                    <p class="project__name">Portfolio website</p>
+                    <p class="project__description">Main personal website</p>
+                    <div class="project__technologies__container">
+                        <p class="html__project__tetechnology">HTML</p>
+                        <p class="css__project__tetechnology">CSS</p>
+                        <p class="js__project__tetechnology">JavaScript</p>
+                        <p class="matter__project__tetechnology">Matter.js</p>
+                        <p class="gsap__project__tetechnology">GSAP.js</p>
+                    </div>
+                </div>
+                <div class="project__card animatable">
+                    <a
+                        href="https://rodiongimranov-web-weather-app.vercel.app/"
+                        class="project__image__background"
+                        target="_blank"
+                    >
+                        <video
+                            class="webClock__background"
+                            src="Media/videos/Weather-App-Screen-Recording.mp4"
+                            type="video/mp4"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                        ></video>
+                        <p class="project__status"></p>
+                        <div class="viewing__sign__container">
+                            <img
+                                class="viewing__sign"
+                                src="Media/svg/viewing__sign-icon.svg"
+                                alt="Viewing Sign"
+                            />
+                        </div>
+                    </a>
+                    <p class="project__name">Weather web App</p>
+                    <p class="project__description">Weather web application</p>
+                    <div class="project__technologies__container">
+                        <p class="html__project__tetechnology">HTML</p>
+                        <p class="css__project__tetechnology">CSS</p>
+                        <p class="js__project__tetechnology">JavaScript</p>
+                        <p class="vue__project__tetechnology">Vue.js</p>
+                        <p class="day-js__project__tetechnology">Day.js</p>
+                    </div>
+                </div>
+                <div class="project__card animatable">
+                    <div class="project__image__background" target="_blank">
+                        <p class="project__status">In Developing</p>
+                        <div class="viewing__sign__container">
+                            <img
+                                class="viewing__sign"
+                                src="Media/svg/viewing__sign-icon.svg"
+                                alt="Viewing Sign"
+                            />
+                        </div>
+                    </div>
+                    <p class="project__name">ToDo web App</p>
+                    <p class="project__description">Application for creating tasks</p>
+                    <div class="project__technologies__container">
+                        <p class="html__project__tetechnology">HTML</p>
+                        <p class="css__project__tetechnology">CSS</p>
+                        <p class="js__project__tetechnology">JavaScript</p>
+                        <p class="vue__project__tetechnology">Vue.js</p>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMore__btn__container">
+                <a href="projects-page.html" class="viewMore__content__block">
+                    <p class="viewMore__text">View All</p>
+                    <svg
+                        class="navigation__arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="15"
+                        viewBox="0 0 19 15"
+                        fill="#949494"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.96375 0.43934C10.5821 -0.146447 11.5846 -0.146447 12.2029 0.43934L18.5363 6.43934C19.1546 7.02513 19.1546 7.97487 18.5363 8.56066L12.2029 14.5607C11.5846 15.1464 10.5821 15.1464 9.96375 14.5607C9.34542 13.9749 9.34542 13.0251 9.96375 12.4393L13.5942 9H1.58333C0.708882 9 0 8.32843 0 7.5C0 6.67157 0.708882 6 1.58333 6L13.5942 6L9.96375 2.56066C9.34542 1.97487 9.34542 1.02513 9.96375 0.43934Z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <footer class="footer__container">
+            <div class="info__block">
+                <p class="author__info">© 2024 Rodion Gimranov. All Rights Reserved.</p>
+                <p class="footer__funny__text">Made with love and countless cups of coffee.</p>
+                <a href="version-history-page.html" class="link__to__history__of__version">
+                    <p class="update__info">Last updated on March 26</p>
+                    <svg
+                        class="arrow-to-history-of-version"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewBox="0 0 13 13"
+                        fill="#949494"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.87333 2.34956C2.8917 1.66975 3.45769 1.10376 4.1375 1.08538L11.1006 0.89719C11.7804 0.878817 12.3166 1.41502 12.2982 2.09483L12.1101 9.05793C12.0917 9.73774 11.5257 10.3037 10.8459 10.3221C10.1661 10.3405 9.62985 9.80428 9.64823 9.12446L9.7561 5.13306L2.97509 11.9141C2.48139 12.4078 1.70202 12.4288 1.23431 11.9611C0.766604 11.4934 0.787668 10.714 1.28136 10.2203L8.06238 3.43933L4.07097 3.54721C3.39116 3.56558 2.85495 3.02938 2.87333 2.34956Z"
+                        />
+                    </svg>
+                </a>
+            </div>
+            <div class="social__block">
+                <a href="https://t.me/RodionGimranov" class="telegram__link" target="_blank"
+                    >Telegram</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/rodiongimranov/"
+                    class="linkedIn__link"
+                    target="_blank"
+                    >LinkedIn</a
+                >
+                <a href="https://github.com/RodionGimranov" class="gitHub__link" target="_blank"
+                    >GitHub</a
+                >
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"
+            integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="javascript/common-scripts.js"></script>
+        <script src="javascript/home-page-scripts.js"></script>
+        <script src="javascript/physics-icons.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CYZFBQKS7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-8CYZFBQKS7");
+        </script>
+    </body>
+</html>
