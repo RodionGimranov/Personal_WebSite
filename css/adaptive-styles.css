@@ -47,12 +47,8 @@
         transition: 0.5s;
     }
 
-    .intro__container {
-        width: 100%;
-        transition: 0.5s;
-    }
-
-    .aboutMe__container {
+    .intro__container,
+    .aboutMe__container  {
         width: 100%;
         transition: 0.5s;
     }
@@ -66,16 +62,8 @@
         font-size: calc(30px + 20 * (100vw / 1520));
     }
 
-    .skills__container {
-        width: 100%;
-        transition: 0.5s;
-    }
-
-    .projects__container {
-        width: 100%;
-        transition: 0.5s;
-    }
-
+    .skills__container,
+    .projects__container,
     .footer__container {
         width: 100%;
         transition: 0.5s;
@@ -126,10 +114,6 @@
         gap: 20px;
     }
 
-    .change__theme__btn {
-        margin-right: 50px;
-    }
-
     .header__burger__container {
         display: flex;
     }
@@ -138,19 +122,16 @@
         position: absolute;
         top: 70px;
         left: 0px;
-
-        box-sizing: border-box;
-        padding: 10px 10px;
+        width: 100%;
+        height: 85dvh;
 
         flex-direction: column;
         align-items: flex-start;
 
-        width: 100%;
-        height: 85dvh;
+        box-sizing: border-box;
+        padding: 10px 10px;
         transition: 0.3s;
-
         z-index: 10;
-
         opacity: 0;
         transform-style: preserve-3d;
         transform: translate3d(110px, -250px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg)
@@ -169,16 +150,18 @@
     .about__btn,
     .projects__btn {
         width: 100%;
-        font-size: 22px;
-        font-weight: 500;
         border-radius: 10px;
         padding: 10px;
+
+        font-size: 22px;
+        font-weight: 500;
     }
 }
 
 @media (max-width: 650px) {
     .footer__container {
         flex-direction: column;
+
         gap: 20px;
         padding: 20px 0px;
     }
@@ -209,13 +192,11 @@
 
 @media (max-width: 390px) {
     .body__text,
-    .closing__parenthesis {
-        margin-left: 15px;
-    }
-
+    .closing__parenthesis,
     .comment__text,
     .font__famaly__text {
         margin-left: 15px;
+
     }
 }
 
@@ -244,6 +225,7 @@
 
     .name__page__block {
         width: 100%;
+
         flex-direction: row;
     }
 
@@ -261,6 +243,7 @@
     .project__list__container {
         width: 100%;
         transition: 0.5s;
+
         justify-content: center;
     }
 }
@@ -344,6 +327,7 @@
     .aboutMe__content__row-1,
     .aboutMe__content__row-2 {
         width: 100%;
+
         justify-content: flex-start;
         align-items: center;
     }
@@ -351,6 +335,7 @@
     .block__aboutMe {
         width: 383px;
         height: auto;
+
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -371,6 +356,7 @@
 
     .music-social-container {
         width: 383px;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -397,7 +383,10 @@
         gap: 10px;
     }
 
-    .block__education {
+    .block__education,
+    .block__tools,
+    .block__interests,
+    .block__quotes   {
         width: 383px;
     }
 
@@ -405,17 +394,9 @@
         width: 100%;
     }
 
-    .block__tools {
-        width: 383px;
-    }
-
     .tool__icon {
         width: 60px;
         height: 60px;
-    }
-
-    .block__interests {
-        width: 383px;
     }
 
     .interests__content {
@@ -431,10 +412,6 @@
     .block__skills {
         width: 383px;
         height: auto;
-    }
-
-    .block__quotes {
-        width: 383px;
     }
 }
 
