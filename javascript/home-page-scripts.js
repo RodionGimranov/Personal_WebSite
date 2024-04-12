@@ -1,5 +1,5 @@
 // Typing text animation
-const text = document.querySelector(".typing__text");
+const text = document.querySelector(".typing_text");
 
 const words = [
     "pages.",
@@ -122,9 +122,9 @@ gsap.registerPlugin(ScrollTrigger);
 let aboutMeTextAnimation;
 
 function runAnimation() {
-    aboutMeTextAnimation = gsap.to(".aboutMe__text span", {
+    aboutMeTextAnimation = gsap.to(".aboutMe_text span", {
         scrollTrigger: {
-            trigger: ".aboutMe__container",
+            trigger: ".aboutMe_container",
             start: "top 35%",
             end: "bottom 0.5%",
             scrub: 1,
@@ -176,7 +176,7 @@ gsap.utils.toArray(".animatable").forEach((item) => {
             trigger: item,
             start: "top 85%",
             end: "bottom 20%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
         },
     });
 });

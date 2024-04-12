@@ -7,7 +7,7 @@ let Engine = Matter.Engine,
 
 let engine = Engine.create();
 
-let physicalIconBlock = document.querySelector(".physical__icons__block");
+let physicalIconBlock = document.querySelector(".physical_icons_block");
 
 let render = Render.create({
     element: physicalIconBlock,
@@ -20,13 +20,13 @@ let render = Render.create({
     },
 });
 
-let ground = Bodies.rectangle(575 / 2, 364, 575, 5, { isStatic: true, render: { visible: false } });
+let ground = Bodies.rectangle(590 / 2, 364, 590, 5, { isStatic: true, render: { visible: false } });
 let leftWall = Bodies.rectangle(0, 364 / 2, 5, 364, { isStatic: true, render: { visible: false } });
-let rightWall = Bodies.rectangle(575, 364 / 2, 5, 364, {
+let rightWall = Bodies.rectangle(590, 364 / 2, 5, 364, {
     isStatic: true,
     render: { visible: false },
 });
-let ceiling = Bodies.rectangle(575 / 2, 0, 575, 5, { isStatic: true, render: { visible: false } });
+let ceiling = Bodies.rectangle(590 / 2, 0, 590, 5, { isStatic: true, render: { visible: false } });
 
 const rows = [100, 200];
 const startingX = 50;
@@ -49,20 +49,22 @@ function createIcon(x, y, texture) {
 
 let icons = [];
 const iconTextures = [
-    "CSS-icon",
-    "Figma-icon",
-    "GitHub-icon",
     "HTML-icon",
+    "CSS-icon",
     "JavaScript-icon",
     "TypeScript-icon",
-    "VSCode-icon",
-    "Vue-icon",
     "SASS-icon",
-    "angular-icon",
-    "react-icon",
     "webpack-icon",
-    "pug-icon",
+    "Vue-icon",
+    "React-icon",
+    "Angular-icon",
+    "Pug-icon",
+    "Vite-icon",
+    "GitHub-icon",
+    "VSCode-icon",
+    "Figma-icon",
 ];
+
 iconTextures.forEach((texture, index) => {
     const row = Math.floor(index / numberOfIconsInRow);
     const col = index % numberOfIconsInRow;
@@ -83,8 +85,6 @@ let mouseConstraint = MouseConstraint.create(engine, {
 });
 
 World.add(engine.world, mouseConstraint);
-
 render.mouse = mouse;
-
 Matter.Runner.run(engine);
 Render.run(render);

@@ -1,5 +1,5 @@
 // Changing the icon of the mobile version of the site on hover
-let mobile_version_btn = document.getElementById("mobile__version-link");
+let mobile_version_btn = document.getElementById("mobile_version-link");
 
 let svgImage = mobile_version_btn.querySelector(".mobile-version-icon");
 
@@ -15,10 +15,10 @@ mobile_version_btn.addEventListener("mouseout", function () {
 });
 
 // Open QR Code Window
-let mobileVersion_btn = document.getElementById("mobile__version-link");
-let open_QrCodeWindow = document.getElementById("qr__code__open");
-let close_QR_Code = document.getElementById("close__QRCode__window");
-let body_aboutMe = document.getElementById("aboutMe__home__page");
+let mobileVersion_btn = document.getElementById("mobile_version-link");
+let open_QrCodeWindow = document.getElementById("qr_code_open");
+let close_QR_Code = document.getElementById("close_QRCode_window");
+let body_aboutMe = document.getElementById("aboutMe_home_page");
 
 mobileVersion_btn.addEventListener("click", function () {
     open_QrCodeWindow.style.opacity = "1";
@@ -258,8 +258,8 @@ let currentQuoteIndex = 1;
 
 function updateQuoteStyle() {
     for (let i = 1; i <= 5; i++) {
-        document.querySelector(`.quote-${i}`).classList.remove("quote-final");
-        document.querySelector(`.quote-${i}`).classList.add("quote-initial");
+        document.querySelector(`.quote_${i}`).classList.remove("quote-final");
+        document.querySelector(`.quote_${i}`).classList.add("quote-initial");
     }
 
     const currentElement = document.querySelector(`.quote-${currentQuoteIndex}`);

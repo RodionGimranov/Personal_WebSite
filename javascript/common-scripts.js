@@ -13,7 +13,7 @@ burgerBTN.addEventListener("click", () => {
         headerNavMenu.style.opacity = "0";
         headerNavMenu.style.transform = "translate3d(110px, -250px, 0px) scale3d(0, 0, 1)";
     }
-
+    
     burgerBTN_Click = !burgerBTN_Click;
 });
 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var projectsBtn = document.getElementById("header-projects-btn");
 
     if (
-        currentURL.endsWith("home__page") ||
+        currentURL.endsWith("home_page") ||
         currentURL.endsWith("index.html") ||
         currentURL.endsWith("/")
     ) {
