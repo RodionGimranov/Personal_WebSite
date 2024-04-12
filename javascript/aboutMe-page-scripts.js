@@ -258,8 +258,8 @@ let currentQuoteIndex = 1;
 
 function updateQuoteStyle() {
     for (let i = 1; i <= 5; i++) {
-        document.querySelector(`.quote_${i}`).classList.remove("quote-final");
-        document.querySelector(`.quote_${i}`).classList.add("quote-initial");
+        document.querySelector(`.quote-${i}`).classList.remove("quote-final");
+        document.querySelector(`.quote-${i}`).classList.add("quote-initial");
     }
 
     const currentElement = document.querySelector(`.quote-${currentQuoteIndex}`);

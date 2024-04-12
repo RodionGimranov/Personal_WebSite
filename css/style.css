@@ -1433,18 +1433,18 @@ body {
     gap: 5px;
 }
 
-.quote_1,
-.quote_2,
-.quote_3,
-.quote_4,
-.quote_5 {
+.quote-1,
+.quote-2,
+.quote-3,
+.quote-4,
+.quote-5 {
     width: 11px;
     height: 11px;
     border-radius: 1000px;
     background-color: var(--second-gray-color);
 }
 
-.quote_1 {
+.quote-1 {
     width: 13px;
     height: 13px;
     background-color: var(--main-white-color);
