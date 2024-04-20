@@ -162,6 +162,40 @@ audioPlayer.addEventListener("ended", nextSong);
 
 loadSong(currentSongIndex);
 
+// Infinite scroll animation
+function cloneIcons() {
+  const leftContainer = document.querySelector(".left-container");
+  const rightContainer = document.querySelector(".right-container");
+
+  leftContainer.innerHTML += leftContainer.innerHTML;
+  rightContainer.innerHTML += rightContainer.innerHTML;
+}
+
+cloneIcons();
+
+const leftContainer = document.querySelector(".left-container");
+const rightContainer = document.querySelector(".right-container");
+
+leftContainer.addEventListener("animationiteration", () => {
+  leftContainer.style.animation = "none";
+  requestAnimationFrame(() => {
+      leftContainer.style.animation = "";
+  });
+});
+
+document.addEventListener(
+  "animationiteration",
+  (event) => {
+      if (event.target.classList.contains("right-container")) {
+          event.target.style.animation = "none";
+          requestAnimationFrame(() => {
+              event.target.style.animation = "";
+          });
+      }
+  },
+  true
+);
+
 // Quotes about IT
 const listQuotations = [
   {
