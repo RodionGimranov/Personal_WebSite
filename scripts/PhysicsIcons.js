@@ -24,6 +24,7 @@ function preloadIcons() {
     img.onload = () => {
       imagesLoaded++;
       if (imagesLoaded === totalImages) {
+        startShowIcons();
       }
     };
     img.src = `Media/svg/physical-icons/${texture}.svg`;
