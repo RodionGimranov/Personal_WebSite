@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
         currentURL.endsWith("/")
     ) {
         homeBtn.style.background = "rgba(242, 242, 242, 0.137)";
-    } else if (currentURL.includes("about-me-page.html")) {
+    } else if (currentURL.includes("AboutMePage.html")) {
         aboutBtn.style.background = "rgba(242, 242, 242, 0.137)";
-    } else if (currentURL.includes("projects-page.html")) {
+    } else if (currentURL.includes("ProjectsPage.html")) {
         projectsBtn.style.background = "rgba(242, 242, 242, 0.137)";
     }
 });
