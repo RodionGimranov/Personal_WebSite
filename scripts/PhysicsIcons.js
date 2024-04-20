@@ -15,7 +15,6 @@ const iconTextures = [
     "Figma-icon",
   ];
 
-// Предварительная загрузка изображений
 let imagesLoaded = 0;
 let totalImages = iconTextures.length;
 
@@ -25,7 +24,6 @@ function preloadIcons() {
     img.onload = () => {
       imagesLoaded++;
       if (imagesLoaded === totalImages) {
-        startShowIcons(); // Выполняем основной код после загрузки всех изображений
       }
     };
     img.src = `Media/svg/physical-icons/${texture}.svg`;
