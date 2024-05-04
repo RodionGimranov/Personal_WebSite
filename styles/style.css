@@ -379,10 +379,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     transition: 0.2s;
     border-radius: 20px;
     border-radius: 20px;
@@ -555,7 +555,7 @@ body {
     gap: 5px;
 }
 
-.name_technology {
+.name_tech {
     font-size: 18px;
     font-weight: 500;
     color: var(--main-dark-color);
@@ -687,7 +687,7 @@ body {
     font-weight: 400;
     color: var(--main-white-color);
 
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .telegram_link:hover,
@@ -1450,14 +1450,15 @@ body {
 
 .project_list_container {
     width: 1200px;
-    margin: 20vh 0px 0px 0px;
+    margin: 20vh 0px 150px 0px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 50px;
     flex-wrap: wrap;
+    column-gap: 75px;
+    row-gap: 50px;
 }
 
 .version_history_container {

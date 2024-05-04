@@ -3,12 +3,13 @@ const techColors = {
   ".css_tech": "#2965F1",
   ".scss_tech": "#C4538C",
   ".js_tech": "#F1E05A",
-  ".vue_tech": "#41B883",
+  ".vue_tech": "#3DD68C",
   ".vite_tech": "#646CFF",
   ".gsap_tech": "#0AE448",
   ".matter_tech": "#82D1BE",
   ".day_js_tech": "#FF5F4C",
-  ".i18next_tech": "#51B8AE",
+  ".vue-i18n_tech": "#51B8AE",
+  ".vueRouter_tech": "#3DD68C",
 };
 
 for (const selector in techColors) {
