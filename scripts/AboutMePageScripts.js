@@ -67,38 +67,38 @@ let songName = document.getElementById("song-name");
 
 const playlistSong = [
   {
-    cover_src: "Media/images/song-cover-images/Tyler-the-Creator.jpg",
+    cover_src: "Media/images/song-cover-images/Tyler-the-Creator.webp",
     name_artist: "Tyler, the Creator",
     name_song: "See You Again",
     song_src: "Media/audio/music-playlist/See-You-Again.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Bo-Burnham.jpg",
+    cover_src: "Media/images/song-cover-images/Bo-Burnham.webp",
     name_artist: "Bo Burnham",
     name_song: "All Eyes On Me",
     song_src: "Media/audio/music-playlist/All-Eyes-On-Me.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Drake.jpg",
+    cover_src: "Media/images/song-cover-images/Drake.webp",
     name_artist: "Drake",
     name_song: "The Motion",
     song_src: "Media/audio/music-playlist/The-Motion.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/The-Weeknd.jpg",
+    cover_src: "Media/images/song-cover-images/The-Weeknd.webp",
     name_artist: "The Weeknd",
     name_song: "Moth To A Flame",
     song_src: "Media/audio/music-playlist/Moth-To-A-Flame.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Pouya.png",
+    cover_src: "Media/images/song-cover-images/Pouya.webp",
     name_artist: "Pouya",
     name_song: "Forever Waiting For Yo...",
     song_src:
       "Media/audio/music-playlist/Forever-Waiting-For-You-At-My-Window.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/earfquake.png",
+    cover_src: "Media/images/song-cover-images/earfquake.webp",
     name_artist: "Tyler, the Creator",
     name_song: "EARFQUAKE",
     song_src: "Media/audio/music-playlist/EARFQUAKE.mp3",
