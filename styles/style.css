@@ -42,8 +42,6 @@ a {
 }
 
 body {
-    min-width: 320px;
-
     box-sizing: border-box;
     padding: 20px;
     overflow-x: hidden;
@@ -60,8 +58,8 @@ body {
 
 .header_container {
     position: fixed;
-    z-index: 999;
     width: 1200px;
+    z-index: 999;
 
     display: flex;
     justify-content: center;
@@ -72,7 +70,7 @@ body {
     width: 60px;
     height: 60px;
 
-    border-radius: 20px;
+    border-radius: 16px;
     background: rgba(53, 53, 53, 0.5);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -127,37 +125,33 @@ body {
     background: rgba(242, 242, 242, 0.137);
 }
 
-.burger_menu_divider-1 {
-    display: none;
+.burger_menu_divider-1,
+.burger_menu_divider-2 {
     width: 100%;
     height: 2px;
-
     background: #ffffff7f;
     margin: 0px 0px 10px 0px;
+
+    display: none;
+}
+
+.burger_menu_divider-2 {
+    margin: 10px 0px 0px 0px;
 }
 
 .burger_menu_title {
     display: none;
-    margin: 10px 0px 15px 10px;
 
+    margin: 10px 0px 15px 10px;
     font-size: 20px;
     font-weight: 500;
     color: #ffffff7f;
 }
 
-.burger_menu_divider-2 {
-    display: none;
-    width: 100%;
-    height: 2px;
-
-    background: #ffffff7f;
-    margin: 10px 0px 0px 0px;
-}
-
 .burger_menu_social_block_title {
     display: none;
-    margin: 15px 0px 15px 10px;
 
+    margin: 15px 0px 15px 10px;
     font-size: 20px;
     font-weight: 500;
     color: #ffffff7f;
@@ -244,8 +238,7 @@ body {
 }
 
 @keyframes blink {
-    0%,
-    100% {
+    0%, 100% {
         opacity: 0;
     }
     50% {
@@ -254,8 +247,7 @@ body {
 }
 
 @-webkit-keyframes blink {
-    0%,
-    100% {
+    0%, 100% {
         opacity: 0;
     }
     50% {
@@ -368,10 +360,7 @@ body {
     gap: 15px;
 }
 
-.html_block,
-.css_block,
-.js_block,
-.vue_block {
+.main_technology_stack {
     width: 280px;
     height: 170px;
 
@@ -389,17 +378,7 @@ body {
     background: var(--second-dark-color);
 }
 
-.html_block:hover,
-.css_block:hover,
-.js_block:hover,
-.vue_block:hover {
-    transform: scale(1.05);
-}
-
-.html_name_skills,
-.css_name_skills,
-.js_name_skills,
-.vue_name_skills {
+.main_skill {
     font-size: 35px;
     font-weight: 500;
 }
@@ -409,7 +388,7 @@ body {
 }
 
 .css_name_skills {
-    color: #563D7C;
+    color: #2965F1;
 }
 
 .js_name_skills {
@@ -494,7 +473,7 @@ body {
 
 .project_status {
     width: 100%;
-    height: 60%;
+    height: 100%;
 
     font-size: 30px;
     font-weight: 500;
@@ -502,12 +481,15 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .link_to_project_container {
     width: 100%;
-    height: 40%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
 
     display: flex;
     justify-content: flex-end;
@@ -517,10 +499,8 @@ body {
 .viewing_sign {
     width: 30px;
     height: 30px;
-    
     opacity: 0;
     z-index: 100;
-    margin: 0px 10px 10px 0px;
 }
 
 .project_image_background:hover .viewing_sign {
@@ -699,7 +679,6 @@ body {
 .qr_code_container {
     position: fixed;
     top: 0px;
-    left: 0px;
     width: 100%;
     height: 100vh;
     z-index: 9999;
@@ -718,7 +697,6 @@ body {
 
 .qr_code_block {
     width: 315px;
-
     box-sizing: border-box;
     padding: 15px;
     border-radius: 20px;
@@ -761,7 +739,6 @@ body {
 
 .qr_code_close_btn {
     width: 100%;
-
     box-sizing: border-box;
     padding: 10px 0px 10px 0px;
     cursor: pointer;
@@ -810,12 +787,13 @@ body {
 .block_education,
 .block_interests,
 .block_skills,
-.block_experience,
+.block_future_content,
 .block_quotes {
     background-color: var(--second-dark-color);
     border-radius: 20px;
     box-sizing: border-box;
     padding: 15px;
+
     display: flex;
 }
 
@@ -913,6 +891,7 @@ body {
 .song_cover {
     width: 150px;
     height: 150px;
+
     border-radius: 8px;
     margin: 20px 0px 0px 0px;
     box-shadow: 3px 4px 13px rgb(255 255 255 / 16%);
@@ -1243,72 +1222,12 @@ body {
     color: var(--main-white-color);
 }
 
-.block_experience {
+.block_future_content {
     width: 342px;
     height: 382px;
 
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-}
-
-.description_experience_container {
-    margin: 15px 0px 0px 0px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.experience_line_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-}
-
-.experience_circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background: var(--second-gray-color);
-}
-
-.experience_line {
-    width: 2px;
-    height: 298px;
-    background: var(--second-gray-color);
-}
-
-.experience_text_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.working_hours {
-    margin: 0px 0px 5px 0px;
-
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--main-gray-color);
-}
-
-.job_title {
-    margin: 0px 0px 10px 0px;
-
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--main-white-color);
-}
-
-.description_tasks {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--main-white-color);
 }
 
 .block_quotes {
@@ -1512,14 +1431,13 @@ body {
     color: var(--main-white-color);
 }
 
-.update_date {
+.update_date,
+.update_description {
     font-size: 20px;
     font-weight: 400;
     color: var(--main-gray-color);
 }
 
 .update_description {
-    font-size: 20px;
-    font-weight: 400;
     color: var(--main-white-color);
 }

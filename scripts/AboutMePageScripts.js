@@ -1,19 +1,3 @@
-// Changing the icon of the mobile version of the site on hover
-let mobile_version_btn = document.getElementById("mobile_version-link");
-
-let svgImage = mobile_version_btn.querySelector(".mobile-version-icon");
-
-let mobile_version_icon_statick = "Media/svg/mobile-version-icon.svg";
-let mobile_version_icon_hover = "Media/svg/mobile-version-icon-hover.svg";
-
-mobile_version_btn.addEventListener("mouseover", function () {
-  svgImage.src = mobile_version_icon_hover;
-});
-
-mobile_version_btn.addEventListener("mouseout", function () {
-  svgImage.src = mobile_version_icon_statick;
-});
-
 // Open QR Code Window
 let mobileVersion_btn = document.getElementById("mobile_version-link");
 let open_QrCodeWindow = document.getElementById("qr_code_open");

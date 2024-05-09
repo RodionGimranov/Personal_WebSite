@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Rodion Gimranov - Frontend Developer</title>
+    <title>Rodion Gimranov</title>
     <link rel="icon" href="Media/images/main-favicon.png">
     <link rel="apple-touch-icon" href="Media/images/main-favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/AdaptiveStyles.css">
+    <link rel="stylesheet" type="text/css" href="styles/adaptiveStyles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Rodion Gimranov - Frontend Developer">
     <meta property="og:image" content="Media/images/main-image.webp">
     <meta name="description" content="This website is the web portfolio of Rodion Gimranov, an emerging frontend developer. Showcasing a professional journey through innovative design and cutting-edge technology, it represents a steadfast commitment to modern web development practices and user-centric solutions.">
 </head>
-
 <body id="home_page">
     <header class="header_container" id="header-menu-open">
         <div class="header_burger_container" id="header-burgerBTN">
@@ -35,14 +34,12 @@
             </div>
         </nav>
     </header>
-
     <main class="intro_container">
         <div class="home-page_text" id="text_enlargement_animation">
             I enjoy creating<br /><span class="letter-W">w</span><span class="letter-E">e</span><span class="letter-B">b</span> <span class="typing_text"></span>
         </div>
     </main>
-
-    <section class="aboutMe_container" id="about-me-container">
+    <section class="aboutMe_container">
         <div class="aboutMe_text_block animatable">
             <h2 class="aboutMe_text">
                 <span>I am a budding Frontend developer, currently studying in my third year at the KFU. I specialize in developing web solutions, paying close attention to design details and applying modern approaches in web technologies. I believe that frontend is about more than just changing the color of buttons.</span>
@@ -52,39 +49,36 @@
             <div class="change_color_btn" id="change-color-btn">Click me</div>
         </div>
     </section>
-
-    <section class="skills_container" id="skills_page">
+    <section class="skills_container">
         <h3 class="section_title">Skills</h3>
         <div class="skills_content">
             <div class="skills_block">
-                <div class="html_block animatable">
-                    <p class="html_name_skills">HTML</p>
+                <div class="main_technology_stack animatable">
+                    <p class="html_name_skills main_skill">HTML</p>
                     <p class="skill_description">Semantic, cross-browser, responsive, and pixel perfect layout.</p>
                 </div>
-                <div class="css_block animatable">
-                    <p class="css_name_skills">CSS</p>
+                <div class="main_technology_stack animatable">
+                    <p class="css_name_skills main_skill">CSS</p>
                     <p class="skill_description">Flexbox, grid, animations, media queries.</p>
                 </div>
-                <div class="js_block animatable">
-                    <p class="js_name_skills">JavaScript</p>
+                <div class="main_technology_stack animatable">
+                    <p class="js_name_skills main_skill">JavaScript</p>
                     <p class="skill_description">Fundamentals, algorithms and data structures, DOM, events.</p>
                 </div>
-                <div class="vue_block animatable">
-                    <p class="vue_name_skills">Vue.js</p>
+                <div class="main_technology_stack animatable">
+                    <p class="vue_name_skills main_skill">Vue.js</p>
                     <p class="skill_description">Reactivity, props, computed properties, methods, lifecycle hooks, directives, composables.</p>
                 </div>
             </div>
             <div class="physical_icons_block animatable"></div>
         </div>
     </section>
-
-    <section class="projects_container" id="projects_page">
+    <section class="projects_container">
         <h3 class="section_title">Projects</h3>
         <div class="projects_card_block">
             <div class="project_card animatable">
                 <a href="https://rodiongimranov.github.io/Personal_WebSite/" class="project_image_background" target="_blank">
                     <video class="video_cover" src="Media/videos/Portfolio-Website-2-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-                    <p class="project_status"></p>
                     <div class="link_to_project_container">
                         <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign" />
                     </div>
@@ -99,11 +93,9 @@
                     <p class="matter_tech name_tech">Matter.js</p>
                 </div>
             </div>
-
             <div class="project_card animatable">
                 <a href="https://rodiongimranov-to-do-app.vercel.app/" class="project_image_background" target="_blank">
                     <video class="video_cover" src="Media/videos/ToDo-App-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-                    <p class="project_status"></p>
                     <div class="link_to_project_container">
                         <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign" />
                     </div>
@@ -117,11 +109,13 @@
                     <p class="vue_tech name_tech">Vue.js</p>
                 </div>
             </div>
-
-            <div class="project_card animatable">
-                <div class="project_image_background">
-                    <p class="project_status">In Developing</p>
-                </div>
+            <div class="project_card animatable">   
+                <a href="https://rodiongimranov.github.io/Keyboard-Key-Test/" class="project_image_background" target="_blank">
+                    <video class="video_cover" src="Media/videos/Keyboard-Key-Test-Screen-Recording.mp4" type="video/mp4" preload="metadata" autoplay loop muted playsinline></video>
+                    <div class="link_to_project_container">
+                        <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign">
+                    </div>
+                </a>
                 <p class="project_name">Keyboard Key Test</p>
                 <p class="project_description">Check your keyboard operation</p>
                 <div class="project_technologies_container">
@@ -129,7 +123,7 @@
                     <p class="scss_tech name_tech">SCSS</p>
                     <p class="js_tech name_tech">JavaScript</p>
                     <p class="vue_tech name_tech">Vue.js</p>
-                    <p class="vueRouter_tech name_tech">VueRouter</p>
+                    <p class="vueRouter_tech name_tech">Vue Router</p>
                     <p class="vite_tech name_tech">Vite</p>
                 </div>
             </div>
@@ -143,7 +137,6 @@
             </a>
         </div>
     </section>
-
     <footer class="footer_container">
         <div class="info_block">
             <p class="author_info">© 2024 Rodion Gimranov. All Rights Reserved.</p>
@@ -161,13 +154,10 @@
             <a href="https://github.com/RodionGimranov" class="gitHub_link" target="_blank">GitHub</a>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script src="scripts/CommonScripts.js"></script>
     <script src="scripts/HomePageScripts.js"></script>
     <script src="scripts/PhysicsIcons.js"></script>

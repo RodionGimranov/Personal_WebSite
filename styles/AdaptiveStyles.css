@@ -46,7 +46,6 @@
 
     .name_page_block {
         width: 100%;
-
         flex-direction: row;
     }
 
@@ -95,7 +94,7 @@
         justify-content: space-between;
     }
 
-    .block_experience {
+    .block_future_content {
         width: 383px;
     }
 
@@ -114,10 +113,7 @@
         justify-content: space-between;
     }
 
-    .html_block,
-    .css_block,
-    .js_block,
-    .vue_block {
+    .main_technology_stack {
         width: 49%;
     }
 }
@@ -129,7 +125,6 @@
 
     .project_list_container {
         width: 100%;
-
         justify-content: center;
     }
 }
@@ -316,10 +311,7 @@
         justify-content: space-between;
     }
 
-    .html_block,
-    .css_block,
-    .js_block,
-    .vue_block {
+    .main_technology_stack {
         width: 100%;
     }
 
@@ -349,7 +341,7 @@
     .block_skills,
     .block_quotes,
     .skills-experience-container,
-    .block_experience,
+    .block_future_content,
     .main-image-container,
     .music_control_panel {
         width: 100%;

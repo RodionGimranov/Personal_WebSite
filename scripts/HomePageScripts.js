@@ -20,7 +20,6 @@ let wordTypeInterval;
 function setTyper(element, words) {
     const LETTER_TYPE_DELAY = 75;
     const WORD_STAY_DELAY = 2000;
-
     const DIRECTION_FORWARDS = 0;
     const DIRECTION_BACKWARDS = 1;
 
@@ -82,6 +81,7 @@ window.addEventListener("resize", function () {
 
 // Change color botton
 let colorBTN = document.getElementById("change-color-btn");
+let clickCount = 0;
 
 const colorArr = [
     "#FF5733",
@@ -105,8 +105,6 @@ const colorArr = [
     "#800080",
     "#008080",
 ];
-
-let clickCount = 0;
 
 function colorBTNPressed() {
     clickCount++;
