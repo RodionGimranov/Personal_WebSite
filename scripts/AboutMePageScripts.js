@@ -30,15 +30,15 @@ document.addEventListener("keydown", function (event) {
 });
 
 // Music player
-let playIcon = "media/svg/music-control-panel-elements/Play-song-icon.svg";
-let stopIcon = "media/svg/music-control-panel-elements/Stop-song-icon.svg";
+let playIcon = "Media/svg/music-control-panel-elements/Play-song-icon.svg";
+let stopIcon = "Media/svg/music-control-panel-elements/Stop-song-icon.svg";
 let previousIcon =
-  "media/svg/music-control-panel-elements/Previous-song-icon.svg";
-let nextIcon = "media/svg/music-control-panel-elements/Next-song-icon.svg";
+  "Media/svg/music-control-panel-elements/Previous-song-icon.svg";
+let nextIcon = "Media/svg/music-control-panel-elements/Next-song-icon.svg";
 let volumeOnIcon =
-  "media/svg/music-control-panel-elements/player-volume-icon.svg";
+  "Media/svg/music-control-panel-elements/player-volume-icon.svg";
 let volumeOffIcon =
-  "media/svg/music-control-panel-elements/player-mute-icon.svg";
+  "Media/svg/music-control-panel-elements/player-mute-icon.svg";
 
 let audioPlayer = document.getElementById("audio-player");
 let playBTN = document.getElementById("play-btn");
@@ -51,41 +51,41 @@ let songName = document.getElementById("song-name");
 
 const playlistSong = [
   {
-    cover_src: "media/images/song-cover-images/Tyler-the-Creator.webp",
+    cover_src: "Media/images/song-cover-images/Tyler-the-Creator.webp",
     name_artist: "Tyler, the Creator",
     name_song: "See You Again",
-    song_src: "media/audio/music-playlist/See-You-Again.mp3",
+    song_src: "Media/audio/music-playlist/See-You-Again.mp3",
   },
   {
-    cover_src: "media/images/song-cover-images/Bo-Burnham.webp",
+    cover_src: "Media/images/song-cover-images/Bo-Burnham.webp",
     name_artist: "Bo Burnham",
     name_song: "All Eyes On Me",
-    song_src: "media/audio/music-playlist/All-Eyes-On-Me.mp3",
+    song_src: "Media/audio/music-playlist/All-Eyes-On-Me.mp3",
   },
   {
-    cover_src: "media/images/song-cover-images/Drake.webp",
+    cover_src: "Media/images/song-cover-images/Drake.webp",
     name_artist: "Drake",
     name_song: "The Motion",
-    song_src: "media/audio/music-playlist/The-Motion.mp3",
+    song_src: "Media/audio/music-playlist/The-Motion.mp3",
   },
   {
-    cover_src: "media/images/song-cover-images/The-Weeknd.webp",
+    cover_src: "Media/images/song-cover-images/The-Weeknd.webp",
     name_artist: "The Weeknd",
     name_song: "Moth To A Flame",
-    song_src: "media/audio/music-playlist/Moth-To-A-Flame.mp3",
+    song_src: "Media/audio/music-playlist/Moth-To-A-Flame.mp3",
   },
   {
-    cover_src: "media/images/song-cover-images/Pouya.webp",
+    cover_src: "Media/images/song-cover-images/Pouya.webp",
     name_artist: "Pouya",
     name_song: "Forever Waiting For Yo...",
     song_src:
-      "media/audio/music-playlist/Forever-Waiting-For-You-At-My-Window.mp3",
+      "Media/audio/music-playlist/Forever-Waiting-For-You-At-My-Window.mp3",
   },
   {
-    cover_src: "media/images/song-cover-images/earfquake.webp",
+    cover_src: "Media/images/song-cover-images/earfquake.webp",
     name_artist: "Tyler, the Creator",
     name_song: "EARFQUAKE",
-    song_src: "media/audio/music-playlist/EARFQUAKE.mp3",
+    song_src: "Media/audio/music-playlist/EARFQUAKE.mp3",
   },
 ];
 
