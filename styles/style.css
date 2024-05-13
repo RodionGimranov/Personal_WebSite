@@ -378,6 +378,10 @@ body {
     background: var(--second-dark-color);
 }
 
+.main_technology_stack:hover {
+    transform: scale(1.04);
+}
+
 .main_skill {
     font-size: 35px;
     font-weight: 500;
