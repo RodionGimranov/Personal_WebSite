@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Rodion Gimranov</title>
-    <link rel="icon" href="Media/images/main-favicon.png">
-    <link rel="apple-touch-icon" href="Media/images/main-favicon.png">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/adaptiveStyles.css">
+    <link rel="icon" href="./src/assets/images/png/main-favicon.png">
+    <link rel="apple-touch-icon" href="./src/assets/images/png/main-favicon.png">
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/adaptiveStyles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Rodion Gimranov - Frontend Developer">
     <meta property="og:image" content="Media/images/main-image.webp">
@@ -16,15 +16,15 @@
 <body id="home_page">
     <header class="header_container" id="header-menu-open">
         <div class="header_burger_container" id="header-burgerBTN">
-            <img class="header_burger_btn" src="Media/svg/header-burger-btn.svg" loading="lazy" alt="Burger Menu Botton" />
+            <img class="header_burger_btn" src="./src/assets/images/svg/header-burger-btn.svg" loading="lazy" alt="Burger Menu Botton" />
         </div>
         <div class="header_menu-empty-element"></div>
         <nav class="header_menu" id="header-nav-menu">
             <p class="burger_menu_title">Navigation</p>
             <span class="burger_menu_divider-1"></span>
             <a href="#home_page" class="home_btn nav-item" id="header-home-btn">Home</a>
-            <a href="./aboutMePage.html" class="about_btn nav-item" id="header-about-btn">About</a>
-            <a href="./projectsPage.html" class="projects_btn nav-item" id="header-projects-btn">Projects</a>
+            <a href="./src/pages/aboutMePage.html" class="about_btn nav-item" id="header-about-btn">About</a>
+            <a href="./src/pages/projectsPage.html" class="projects_btn nav-item" id="header-projects-btn">Projects</a>
             <span class="burger_menu_divider-2"></span>
             <p class="burger_menu_social_block_title">Socials</p>
             <div class="burger_menu_social_block">
@@ -42,7 +42,7 @@
     <section class="aboutMe_container">
         <div class="aboutMe_text_block animatable">
             <h2 class="aboutMe_text">
-                <span>I am a budding Frontend developer, currently studying in my third year at the KFU. I specialize in developing web solutions, paying close attention to design details and applying modern approaches in web technologies. I believe that frontend is about more than just changing the color of buttons.</span>
+                <span>I am a Frontend Developer currently studying in my third year at KFU. I specialize in developing web solutions, paying close attention to design details, and applying modern approaches in web technologies. I believe that frontend development is about more than just changing the color of buttons.</span>
             </h2>
         </div>
         <div class="change_color_btn-wrapper">
@@ -78,9 +78,9 @@
         <div class="projects_card_block">
             <div class="project_card animatable">
                 <a href="https://rodiongimranov.github.io/Personal_WebSite/" class="project_image_background" target="_blank">
-                    <video class="video_cover" src="Media/videos/Portfolio-Website-2-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+                    <video class="video_cover" src="./src/assets/videos/Portfolio-Website-2-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
                     <div class="link_to_project_container">
-                        <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign" />
+                        <img class="viewing_sign" src="./src/assets/images/svg/viewing_sign-icon.svg" alt="Viewing Sign" />
                     </div>
                 </a>
                 <p class="project_name">Portfolio website</p>
@@ -95,9 +95,9 @@
             </div>
             <div class="project_card animatable">
                 <a href="https://rodiongimranov-to-do-app.vercel.app/" class="project_image_background" target="_blank">
-                    <video class="video_cover" src="Media/videos/ToDo-App-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+                    <video class="video_cover" src="./src/assets/videos/ToDo-App-Screen-Recording.mp4" type="video/mp4" autoplay loop muted playsinline></video>
                     <div class="link_to_project_container">
-                        <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign" />
+                        <img class="viewing_sign" src="./src/assets/images/svg/viewing_sign-icon.svg" alt="Viewing Sign" />
                     </div>
                 </a>
                 <p class="project_name">ToDo web App</p>
@@ -111,9 +111,9 @@
             </div>
             <div class="project_card animatable">   
                 <a href="https://rodiongimranov.github.io/Keyboard-Key-Test/" class="project_image_background" target="_blank">
-                    <video class="video_cover" src="Media/videos/Keyboard-Key-Test-Screen-Recording.mp4" type="video/mp4" preload="metadata" autoplay loop muted playsinline></video>
+                    <video class="video_cover" src="./src/assets/videos/Keyboard-Key-Test-Screen-Recording.mp4" type="video/mp4" preload="metadata" autoplay loop muted playsinline></video>
                     <div class="link_to_project_container">
-                        <img class="viewing_sign" src="Media/svg/viewing__sign-icon.svg" alt="Viewing Sign">
+                        <img class="viewing_sign" src="./src/assets/images/svg/viewing_sign-icon.svg" alt="Viewing Sign">
                     </div>
                 </a>
                 <p class="project_name">Keyboard Key Test</p>
@@ -129,7 +129,7 @@
             </div>
         </div>
         <div class="viewMore_btn_container">
-            <a href="./projectsPage.html" class="viewMore_content_block">
+            <a href="./src/pages/projectsPage.html" class="viewMore_content_block">
                 <p class="viewMore_text">View All</p>
                 <svg class="navigation_arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="#949494">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.96375 0.43934C10.5821 -0.146447 11.5846 -0.146447 12.2029 0.43934L18.5363 6.43934C19.1546 7.02513 19.1546 7.97487 18.5363 8.56066L12.2029 14.5607C11.5846 15.1464 10.5821 15.1464 9.96375 14.5607C9.34542 13.9749 9.34542 13.0251 9.96375 12.4393L13.5942 9H1.58333C0.708882 9 0 8.32843 0 7.5C0 6.67157 0.708882 6 1.58333 6L13.5942 6L9.96375 2.56066C9.34542 1.97487 9.34542 1.02513 9.96375 0.43934Z" />
@@ -141,7 +141,7 @@
         <div class="info_block">
             <p class="author_info">© 2024 Rodion Gimranov. All Rights Reserved.</p>
             <p class="footer_funny_text">Made with love and countless cups of coffee.</p>
-            <a href="./changelog.html" class="link_to_history_of_version">
+            <a href="./src/pages/changelog.html" class="link_to_history_of_version">
                 <p class="update_info">Last updated on May 13</p>
                 <svg class="arrow-to-history-of-version" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="#949494">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87333 2.34956C2.8917 1.66975 3.45769 1.10376 4.1375 1.08538L11.1006 0.89719C11.7804 0.878817 12.3166 1.41502 12.2982 2.09483L12.1101 9.05793C12.0917 9.73774 11.5257 10.3037 10.8459 10.3221C10.1661 10.3405 9.62985 9.80428 9.64823 9.12446L9.7561 5.13306L2.97509 11.9141C2.48139 12.4078 1.70202 12.4288 1.23431 11.9611C0.766604 11.4934 0.787668 10.714 1.28136 10.2203L8.06238 3.43933L4.07097 3.54721C3.39116 3.56558 2.85495 3.02938 2.87333 2.34956Z" />
@@ -158,9 +158,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" integrity="sha512-0z8URjGET6GWnS1xcgiLBZBzoaS8BNlKayfZyQNKz4IRp+s7CKXx0yz7Eco2+TcwoeMBa5KMwmTX7Kus7Fa5Uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="scripts/CommonScripts.js"></script>
-    <script src="scripts/HomePageScripts.js"></script>
-    <script src="scripts/PhysicsIcons.js"></script>
-    <script src="scripts/TechColorPalette.js"></script>
+    <script src="./src/scripts/CommonScripts.js"></script>
+    <script src="./src/scripts/HomePageScripts.js"></script>
+    <script src="./src/scripts/PhysicsIcons.js"></script>
+    <script src="./src/scripts/TechColorPalette.js"></script>
 </body>
 </html>
