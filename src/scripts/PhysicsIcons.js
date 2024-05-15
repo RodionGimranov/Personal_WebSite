@@ -27,7 +27,7 @@ function preloadIcons() {
         startShowIcons();
       }
     };
-    img.src = `Media/svg/physical-icons/${texture}.svg`;
+    img.src = `src/assets/images/svg/physical-icons/${texture}.svg`;
   });
 }
 
@@ -84,7 +84,7 @@ function startShowIcons() {
       restitution: 0.2,
       render: {
         sprite: {
-          texture: `Media/svg/physical-icons/${texture}.svg`,
+          texture: `/src/assets/images/svg/physical-icons/${texture}.svg`,
           xScale: 1,
           yScale: 1,
         },

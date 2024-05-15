@@ -30,15 +30,18 @@ document.addEventListener("keydown", function (event) {
 });
 
 // Music player
-let playIcon = "Media/svg/music-control-panel-elements/Play-song-icon.svg";
-let stopIcon = "Media/svg/music-control-panel-elements/Stop-song-icon.svg";
+let playIcon =
+  "../assets/images/svg/music-control-panel-elements/Play-song-icon.svg";
+let stopIcon =
+  "../assets/images/svg/music-control-panel-elements/Stop-song-icon.svg";
 let previousIcon =
-  "Media/svg/music-control-panel-elements/Previous-song-icon.svg";
-let nextIcon = "Media/svg/music-control-panel-elements/Next-song-icon.svg";
+  "../assets/images/svg/music-control-panel-elements/Previous-song-icon.svg";
+let nextIcon =
+  "../assets/images/svg/music-control-panel-elements/Next-song-icon.svg";
 let volumeOnIcon =
-  "Media/svg/music-control-panel-elements/player-volume-icon.svg";
+  "../assets/images/svg/music-control-panel-elements/player-volume-icon.svg";
 let volumeOffIcon =
-  "Media/svg/music-control-panel-elements/player-mute-icon.svg";
+  "../assets/images/svg/music-control-panel-elements/player-mute-icon.svg";
 
 let audioPlayer = document.getElementById("audio-player");
 let playBTN = document.getElementById("play-btn");
@@ -51,41 +54,40 @@ let songName = document.getElementById("song-name");
 
 const playlistSong = [
   {
-    cover_src: "Media/images/song-cover-images/Tyler-the-Creator.webp",
+    cover_src: "../assets/images/webp/song-cover-images/Tyler-the-Creator.webp",
     name_artist: "Tyler, the Creator",
     name_song: "See You Again",
-    song_src: "Media/audio/music-playlist/See-You-Again.mp3",
+    song_src: "../assets/audio/See-You-Again.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Bo-Burnham.webp",
+    cover_src: "../assets/images/webp/song-cover-images/Bo-Burnham.webp",
     name_artist: "Bo Burnham",
     name_song: "All Eyes On Me",
-    song_src: "Media/audio/music-playlist/All-Eyes-On-Me.mp3",
+    song_src: "../assets/audio/All-Eyes-On-Me.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Drake.webp",
+    cover_src: "../assets/images/webp/song-cover-images/Drake.webp",
     name_artist: "Drake",
     name_song: "The Motion",
-    song_src: "Media/audio/music-playlist/The-Motion.mp3",
+    song_src: "../assets/audio/The-Motion.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/The-Weeknd.webp",
+    cover_src: "../assets/images/webp/song-cover-images/The-Weeknd.webp",
     name_artist: "The Weeknd",
     name_song: "Moth To A Flame",
-    song_src: "Media/audio/music-playlist/Moth-To-A-Flame.mp3",
+    song_src: "../assets/audio/Moth-To-A-Flame.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/Pouya.webp",
+    cover_src: "../assets/images/webp/song-cover-images/Pouya.webp",
     name_artist: "Pouya",
     name_song: "Forever Waiting For Yo...",
-    song_src:
-      "Media/audio/music-playlist/Forever-Waiting-For-You-At-My-Window.mp3",
+    song_src: "../assets/audio/Forever-Waiting-For-You-At-My-Window.mp3",
   },
   {
-    cover_src: "Media/images/song-cover-images/earfquake.webp",
+    cover_src: "../assets/images/webp/song-cover-images/earfquake.webp",
     name_artist: "Tyler, the Creator",
     name_song: "EARFQUAKE",
-    song_src: "Media/audio/music-playlist/EARFQUAKE.mp3",
+    song_src: "../assets/audio/EARFQUAKE.mp3",
   },
 ];
 
@@ -163,21 +165,21 @@ const rightContainer = document.querySelector(".right-container");
 leftContainer.addEventListener("animationiteration", () => {
   leftContainer.style.animation = "none";
   requestAnimationFrame(() => {
-      leftContainer.style.animation = "";
+    leftContainer.style.animation = "";
   });
 });
 
 document.addEventListener(
   "animationiteration",
   (event) => {
-      if (event.target.classList.contains("right-container")) {
-          event.target.style.animation = "none";
-          requestAnimationFrame(() => {
-              event.target.style.animation = "";
-          });
-      }
+    if (event.target.classList.contains("right-container")) {
+      event.target.style.animation = "none";
+      requestAnimationFrame(() => {
+        event.target.style.animation = "";
+      });
+    }
   },
-  true
+  true,
 );
 
 // Quotes about IT
