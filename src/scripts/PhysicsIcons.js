@@ -4,7 +4,7 @@ const iconTextures = [
     "JavaScript-icon",
     "TypeScript-icon",
     "SASS-icon",
-    "webpack-icon",
+    "Webpack-icon",
     "Vue-icon",
     "React-icon",
     "Angular-icon",
