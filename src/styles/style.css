@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
-:root {
-    --main-dark-color: #000;
-    --second-dark-color: #1c1c1e;
-    --main-white-color: #ffffff;
-    --main-gray-color: #949494;
-    --second-gray-color: #4a4a4a;
-    --third-gray-color: #2b2a2a;
-}
-
 * {
     margin: 0;
     padding: 0;
