@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,7 +12,6 @@ html {
 }
 
 a {
-    color: var(--main-white-color);
     text-decoration: none;
 }
 
@@ -33,10 +33,9 @@ a {
 }
 
 body {
-    box-sizing: border-box;
     padding: 20px;
     overflow-x: hidden;
-    background-color: #080808;
+    background-color: var(--background-сolor);
 
     font-family: "Roboto", sans-serif;
     color: var(--main-white-color);
@@ -79,24 +78,21 @@ body {
 
 .header_menu {
     position: relative;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    box-sizing: border-box;
     padding: 6px;
     border-radius: 24px;
     background: rgba(53, 53, 53, 0.5);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .home_btn,
 .about_btn,
 .projects_btn {
-    box-sizing: border-box;
     padding: 8px 15px;
     border-radius: 16px;
     transition: 0.2s;
@@ -122,7 +118,6 @@ body {
     height: 2px;
     background: #ffffff7f;
     margin: 0px 0px 10px 0px;
-
     display: none;
 }
 
@@ -132,7 +127,6 @@ body {
 
 .burger_menu_title {
     display: none;
-
     margin: 10px 0px 15px 10px;
     font-size: 20px;
     font-weight: 500;
@@ -141,7 +135,6 @@ body {
 
 .burger_menu_social_block_title {
     display: none;
-
     margin: 15px 0px 15px 10px;
     font-size: 20px;
     font-weight: 500;
@@ -154,7 +147,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 25px;
-
     margin: 0px 0px 0px 10px;
 }
 
@@ -164,7 +156,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--main-white-color);
-
     transition: 0.2s;
 }
 
@@ -265,9 +256,6 @@ body {
 
 .aboutMe_text_block {
     width: 100%;
-}
-
-.aboutMe_text_block {
     text-align: center;
 }
 
@@ -300,7 +288,6 @@ body {
     align-items: center;
 
     margin: 0px 50px 0px 0px;
-    box-sizing: border-box;
     padding: 10px 20px;
     background-color: var(--main-white-color);
     border-radius: 20px;
@@ -332,7 +319,6 @@ body {
 
 .skills_content {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -342,7 +328,6 @@ body {
 
 .skills_block {
     width: 50%;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -361,7 +346,6 @@ body {
     align-items: center;
     gap: 10px;
 
-    box-sizing: border-box;
     padding: 10px;
     transition: 0.2s;
     border-radius: 20px;
@@ -424,7 +408,6 @@ body {
 
 .projects_card_block {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -482,8 +465,6 @@ body {
 .link_to_project_container {
     width: 100%;
     height: 100%;
-
-    box-sizing: border-box;
     padding: 10px;
 
     display: flex;
@@ -506,7 +487,6 @@ body {
     font-size: 30px;
     font-weight: 500;
     color: var(--main-white-color);
-
     margin: 20px 0px 0px 0px;
 }
 
@@ -514,7 +494,6 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: var(--main-gray-color);
-
     margin: 10px 0px 0px 0px;
 }
 
@@ -539,14 +518,12 @@ body {
     justify-content: center;
     align-items: center;
 
-    box-sizing: border-box;
     padding: 5px 12px;  
     border-radius: 20px;
 }
 
 .viewMore_btn_container {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -567,7 +544,6 @@ body {
     font-size: 25px;
     font-weight: 500;
     color: var(--main-gray-color);
-
     transition: 0.2s;
 }
 
@@ -588,14 +564,12 @@ body {
 
 .footer_container {
     width: 1200px;
+    padding: 20px 0px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-
-    box-sizing: border-box;
-    padding: 20px 0px;
 }
 
 .info_block {
@@ -629,7 +603,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--main-gray-color);
-
     transition: 0.2s;
 }
 
@@ -661,8 +634,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--main-white-color);
-
-    transition: 0.1s;
 }
 
 .telegram_link:hover,
@@ -692,7 +663,6 @@ body {
 
 .qr_code_block {
     width: 315px;
-    box-sizing: border-box;
     padding: 15px;
     border-radius: 20px;
     background-color: var(--second-dark-color);
@@ -705,7 +675,6 @@ body {
 
 .qr_code_title {
     margin: 0px 0px 15px 0px;
-
     font-size: 30px;
     font-weight: 600;
     color: var(--main-white-color);
@@ -713,7 +682,6 @@ body {
 
 .qr_code_description {
     margin: 0px 0px 20px 0px;
-
     font-size: 20px;
     font-weight: 400;
     color: var(--main-gray-color);
@@ -734,7 +702,6 @@ body {
 
 .qr_code_close_btn {
     width: 100%;
-    box-sizing: border-box;
     padding: 10px 0px 10px 0px;
     cursor: pointer;
     border-radius: 15px;
@@ -786,9 +753,7 @@ body {
 .block_quotes {
     background-color: var(--second-dark-color);
     border-radius: 20px;
-    box-sizing: border-box;
     padding: 15px;
-
     display: flex;
 }
 
@@ -796,7 +761,6 @@ body {
     background-color: var(--second-dark-color);
     border-radius: 20px;
     overflow: hidden;
-
     display: flex;
 }
 
@@ -810,7 +774,6 @@ body {
     font-size: 25px;
     font-weight: 500;
     color: var(--main-white-color);
-
     margin: 15px 0px 0px 15px;
 }
 
@@ -856,7 +819,6 @@ body {
 .aboutMe-paragraph-1,
 .aboutMe-paragraph-2 {
     margin: 10px 0px 0px 0px;
-
     font-size: 20px;
     font-weight: 400;
     color: var(--main-white-color);
@@ -894,7 +856,6 @@ body {
 
 .artist_name {
     margin: 10px 0px 0px 0px;
-
     font-size: 18px;
     font-weight: 400;
     color: var(--main-gray-color);
@@ -902,7 +863,6 @@ body {
 
 .song_name {
     margin: 10px 0px 0px 0px;
-
     font-size: 20px;
     font-weight: 500;
     color: var(--main-white-color);
@@ -979,8 +939,8 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .telegram-icon-link,
@@ -1010,7 +970,6 @@ body {
 .mobile-version-link {
     width: 100%;
     height: 100%;
-
     cursor: pointer;
     margin: 20px 0px 0px 0px;
 
@@ -1085,11 +1044,10 @@ body {
 .left-container,
 .right-container {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
@@ -1140,6 +1098,10 @@ body {
     width: 70px;
     height: 70px;
     transition: 0.2s;
+}
+
+.tool_icon:hover {
+    transform: scale(1.1);
 }
 
 .block_interests {
@@ -1306,14 +1268,13 @@ body {
 .quote-initial {
     width: 11px;
     height: 11px;
-    border-radius: 1000px;
+    border-radius: 100%;
     background-color: var(--second-gray-color);
 }
 
 .quote-final {
-    width: 13px;
-    height: 13px;
-    border-radius: 1000px;
+    width: 11px;
+    height: 11px;
     background-color: var(--main-white-color);
 }
 
@@ -1351,15 +1312,13 @@ body {
 
 .greet_section {
     width: 100%;
+    border-bottom: 1px solid var(--second-gray-color);
+    padding: 0px 0px 20px 0px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-
-    border-bottom: 1px solid var(--second-gray-color);
-    box-sizing: border-box;
-    padding: 0px 0px 20px 0px;
 }
 
 .project_list_container {
@@ -1389,21 +1348,18 @@ body {
     font-size: 40px;
     font-weight: 500;
     color: var(--main-white-color);
-
     margin: 0px 0px 20px 0px;
 }
 
 .version_history_block {
     width: 100%;
+    padding: 30px 0px 20px 0px;
+    border-top: 1px solid var(--second-gray-color);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    box-sizing: border-box;
-    padding: 30px 0px 20px 0px;
-    border-top: 1px solid var(--second-gray-color);
 }
 
 .first_update {
