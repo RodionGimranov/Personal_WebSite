@@ -8,7 +8,7 @@ const techColors = {
   ".gsap_tech": "#0AE448",
   ".matter_tech": "#82D1BE",
   ".day_js_tech": "#FF5F4C",
-  ".vue-i18n_tech": "#51B8AE",
+  ".vue_i18n_tech": "#51B8AE",
   ".vueRouter_tech": "#3DD68C",
   ".three_js_tech": "#FFFFFF",
 };
