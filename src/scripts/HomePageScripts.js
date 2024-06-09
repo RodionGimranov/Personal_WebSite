@@ -1,4 +1,3 @@
-// Typing text animation
 const text = document.querySelector(".typing_text");
 
 const words = [
@@ -79,7 +78,6 @@ window.addEventListener("resize", function () {
     setTyper(text, words);
 });
 
-// Change color botton
 let colorBTN = document.getElementById("change-color-btn");
 let clickCount = 0;
 
@@ -114,7 +112,6 @@ function colorBTNPressed() {
 
 colorBTN.addEventListener("click", colorBTNPressed);
 
-// Animation of text filling in the "About Me" section when scrolling
 gsap.registerPlugin(ScrollTrigger);
 
 let aboutMeTextAnimation;
@@ -136,7 +133,6 @@ function runAnimation() {
     });
 }
 
-// Disable text fill animation when scrolling for the "About Me" text for devices with a screen width of less than 1250px
 function killAnimation() {
     if (aboutMeTextAnimation) {
         aboutMeTextAnimation.scrollTrigger.kill();
@@ -159,7 +155,6 @@ window.addEventListener("resize", function () {
     }
 });
 
-// Animate the appearance of elements when scrolling
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".animatable").forEach((item) => {
@@ -179,7 +174,6 @@ gsap.utils.toArray(".animatable").forEach((item) => {
     });
 });
 
-// Animation of increasing text in the Intro section
 function runMainTextAnimation() {
     introMainText = gsap.to("#text_enlargement_animation", {
         scrollTrigger: {
@@ -194,7 +188,6 @@ function runMainTextAnimation() {
     });
 }
 
-// Disable text magnification animation
 function killMainTextAnimation() {
     if (introMainText) {
         introMainText.scrollTrigger.kill();
@@ -213,4 +206,15 @@ window.addEventListener("resize", function () {
     } else if (!introMainText) {
         runMainTextAnimation();
     }
+});
+
+
+const cursorStyle = document.getElementById('icons-block');
+
+window.addEventListener("mousedown", function () {
+    cursorStyle.style.cursor = 'grabbing';
+});
+
+window.addEventListener("mouseup", function () {
+    cursorStyle.style.cursor = 'grab';
 });
