@@ -1,4 +1,3 @@
-// Open Burger Menu
 let burgerBTN = document.getElementById("header-burgerBTN");
 let headerNavMenu = document.getElementById("header-nav-menu");
 let burgerBTN_Click = true;
@@ -17,7 +16,6 @@ burgerBTN.addEventListener("click", () => {
     burgerBTN_Click = !burgerBTN_Click;
 });
 
-// Header buttons background
 document.addEventListener("DOMContentLoaded", function () {
     var currentURL = window.location.href;
     var homeBtn = document.getElementById("header-home-btn");

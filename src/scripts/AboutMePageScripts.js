@@ -1,4 +1,3 @@
-// Open QR Code Window
 let mobileVersion_btn = document.getElementById("mobile_version-link");
 let open_QrCodeWindow = document.getElementById("qr_code_open");
 let close_QR_Code = document.getElementById("close_QRCode_window");
@@ -22,14 +21,12 @@ function closeQRCodeWindow() {
   body_aboutMe.style.overflowY = "scroll";
 }
 
-// Event listener for ESC key
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     closeQRCodeWindow();
   }
 });
 
-// Music player
 let playIcon =
   "../assets/images/svg/music-control-panel-elements/Play-song-icon.svg";
 let stopIcon =
@@ -148,7 +145,6 @@ audioPlayer.addEventListener("ended", nextSong);
 
 loadSong(currentSongIndex);
 
-// Infinite scroll animation
 function cloneIcons() {
   const leftContainer = document.querySelector(".left-container");
   const rightContainer = document.querySelector(".right-container");
@@ -182,7 +178,6 @@ document.addEventListener(
   true,
 );
 
-// Quotes about IT
 const listQuotations = [
   {
     quote:
